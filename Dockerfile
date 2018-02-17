@@ -17,8 +17,6 @@ COPY conf /
 RUN chmod +x /usr/local/bin/httpd-foreground
 # RUN chmod +x /usr/local/bin/httpd-foreground
 
-# Create a user to match the GUID of our user
-# TODO A better solution is required because machines may have multiple users
 RUN useradd application
 WORKDIR /var/www
 
